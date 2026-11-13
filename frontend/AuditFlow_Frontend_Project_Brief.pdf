@@ -1,0 +1,234 @@
+%PDF-1.4
+%AuditFlow brief
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 3720 >>
+stream
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 48.00 808.00 Tm (AUDITFLOW) Tj ET
+0.38 0.44 0.52 rg BT /F1 8 Tf 1 0 0 1 484.28 808.00 Tm (PROJECT OVERVIEW) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 794 m 547 794 l S
+0.07 0.14 0.24 rg BT /F2 25 Tf 1 0 0 1 48.00 752.00 Tm (A clear starting point for the AuditFlow UI) Tj ET
+0.31 0.38 0.47 rg BT /F1 11 Tf 1 0 0 1 52.00 724.00 Tm (A compact handoff for building the right frontend - grounded in the repository as it) Tj ET
+0.31 0.38 0.47 rg BT /F1 11 Tf 1 0 0 1 52.00 709.00 Tm (exists today.) Tj ET
+0.09 0.42 0.39 rg BT /F2 8 Tf 1 0 0 1 52.00 683.00 Tm (PROJECT HANDOFF  |  NOVEMBER 2026) Tj ET
+0.17 0.22 0.3 rg BT /F1 10 Tf 1 0 0 1 52.00 661.00 Tm (AuditFlow is intended to help a user submit a document, follow its processing, review) Tj ET
+0.17 0.22 0.3 rg BT /F1 10 Tf 1 0 0 1 52.00 646.00 Tm (extracted or analyzed output, and archive a completed record. Repository names point toward) Tj ET
+0.17 0.22 0.3 rg BT /F1 10 Tf 1 0 0 1 52.00 631.00 Tm (this workflow: UploadZone, Dashboard, extract, analyze, and archive.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 608.00 Tm (What success looks like) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 587.00 Tm (- A user can tell what was submitted, what is happening, what the system found, and what action) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 574.50 Tm (comes next.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 560.00 Tm (- The interface feels like a clear, professional admin dashboard and works on desktop and mobile.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 545.50 Tm (- Real service behavior is connected only after its API and business rules are confirmed.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 527.00 Tm (Confirmed technical context) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 506.00 Tm (- Frontend stack: React 19, TypeScript, and Vite.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 491.50 Tm (- The current App.tsx still renders the Vite starter page.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 477.00 Tm (- Dashboard.tsx and UploadZone.tsx exist but are empty.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 462.50 Tm (- Backend function files \(extract, analyze, archive\) and backend/template.yaml are empty.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 448.00 Tm (- No endpoints, data schema, file rules, authentication, or design system are documented.) Tj ET
+1 0.97 0.91 rg 48 378.5 499 58 re f
+0.09 0.48 0.43 rg 48 378.5 3 58 re f
+0.08 0.34 0.32 rg BT /F2 9 Tf 1 0 0 1 60.00 420.50 Tm (Important: scaffold, not working product) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 406.50 Tm (The intended workflow below is a proposed direction inferred from repository names. Confirm) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 394.50 Tm (requirements with the project owner. Do not treat example UI states or service contracts as) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 382.50 Tm (implemented backend behavior.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 362.50 Tm (Frontend objective) Tj ET
+0.17 0.22 0.3 rg BT /F1 9.5 Tf 1 0 0 1 52.00 341.50 Tm (Replace the starter screen with a responsive document dashboard and a complete upload-to-review) Tj ET
+0.17 0.22 0.3 rg BT /F1 9.5 Tf 1 0 0 1 52.00 327.50 Tm (experience. Keep the integration boundary typed and easy to connect later; do not make up API) Tj ET
+0.17 0.22 0.3 rg BT /F1 9.5 Tf 1 0 0 1 52.00 313.50 Tm (details or show fake success.) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 42 m 547 42 l S
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 48.00 28.00 Tm (AuditFlow | Frontend implementation brief) Tj ET
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 521.27 28.00 Tm (01 / 04) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 4669 >>
+stream
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 48.00 808.00 Tm (AUDITFLOW) Tj ET
+0.38 0.44 0.52 rg BT /F1 8 Tf 1 0 0 1 476.44 808.00 Tm (PRODUCT EXPERIENCE) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 794 m 547 794 l S
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 756.00 Tm (Suggested user journey) Tj ET
+0.93 0.96 0.97 rg 48 706 96 34 re f
+0.09 0.35 0.34 rg BT /F2 7.8 Tf 1 0 0 1 61.60 719.00 Tm (1  Choose document) Tj ET
+0.09 0.48 0.43 rg BT /F2 10 Tf 1 0 0 1 144.00 718.00 Tm (>) Tj ET
+0.93 0.96 0.97 rg 148 706 96 34 re f
+0.09 0.35 0.34 rg BT /F2 7.8 Tf 1 0 0 1 178.80 719.00 Tm (2  Upload) Tj ET
+0.09 0.48 0.43 rg BT /F2 10 Tf 1 0 0 1 244.00 718.00 Tm (>) Tj ET
+0.93 0.96 0.97 rg 248 706 96 34 re f
+0.09 0.35 0.34 rg BT /F2 7.8 Tf 1 0 0 1 276.89 719.00 Tm (3  Process) Tj ET
+0.09 0.48 0.43 rg BT /F2 10 Tf 1 0 0 1 344.00 718.00 Tm (>) Tj ET
+0.93 0.96 0.97 rg 348 706 96 34 re f
+0.09 0.35 0.34 rg BT /F2 7.8 Tf 1 0 0 1 378.80 719.00 Tm (4  Review) Tj ET
+0.09 0.48 0.43 rg BT /F2 10 Tf 1 0 0 1 444.00 718.00 Tm (>) Tj ET
+0.93 0.96 0.97 rg 448 706 96 34 re f
+0.09 0.35 0.34 rg BT /F2 7.8 Tf 1 0 0 1 476.89 719.00 Tm (5  Archive) Tj ET
+0.38 0.44 0.52 rg BT /F1 8.5 Tf 1 0 0 1 52.00 688.00 Tm (Show a clear status at every stage. A success state must only appear after the service confirms success.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 668.00 Tm (Core screens and interactions) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 647.00 Tm (Dashboard) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 633.00 Tm (- Product name, clear page heading, and prominent Upload document action.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 618.50 Tm (- Recent document/audit records; show only fields actually supplied by the backend.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 604.00 Tm (- Helpful first-use empty state, plus distinct loading and error states.) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 589.50 Tm (Document upload) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 575.50 Tm (- Accessible drop area and file picker; show selected filename and remove/replace action.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 561.00 Tm (- Validate only file types and size limits confirmed by the product/backend owner.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 546.50 Tm (- Show upload or processing progress when real progress/status is available.) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 532.00 Tm (Review results) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 518.00 Tm (- Show document identity and current processing status.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 503.50 Tm (- Present returned extraction/analysis fields in a readable, structured layout.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 489.00 Tm (- Handle missing values and service errors; offer retry only where supported.) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 474.50 Tm (Archive) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 460.50 Tm (- Make the action explicit; confirm before an irreversible change.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 446.00 Tm (- Reflect only a server-confirmed result; explain failures and allow a safe retry.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 427.50 Tm (States the interface should represent) Tj ET
+0.09 0.42 0.39 rg BT /F2 9 Tf 1 0 0 1 52.00 406.50 Tm (Empty | Selecting | Uploading | Processing | Completed | Failed / retry | Archiving | Archived) Tj ET
+0.93 0.97 0.96 rg 48 330.5 499 58 re f
+0.09 0.48 0.43 rg 48 330.5 3 58 re f
+0.08 0.34 0.32 rg BT /F2 9 Tf 1 0 0 1 60.00 372.50 Tm (Design direction) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 358.50 Tm (Professional, calm admin UI with strong status hierarchy, readable cards/tables, responsive) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 346.50 Tm (layouts, keyboard-accessible controls, visible focus, and clear errors. No approved brand colors or) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 334.50 Tm (design reference exist; keep styling tokens easy to change.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 314.50 Tm (Responsive behavior) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 293.50 Tm (On desktop, use a compact header/navigation with a full-width records area. On mobile, stack content,) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 280.50 Tm (keep primary actions reachable, and use cards rather than forcing wide tables to scroll.) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 42 m 547 42 l S
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 48.00 28.00 Tm (AuditFlow | Frontend implementation brief) Tj ET
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 521.27 28.00 Tm (02 / 04) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 4049 >>
+stream
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 48.00 808.00 Tm (AUDITFLOW) Tj ET
+0.38 0.44 0.52 rg BT /F1 8 Tf 1 0 0 1 464.68 808.00 Tm (BUILD AND INTEGRATION) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 794 m 547 794 l S
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 756.00 Tm (Suggested component boundaries) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 735.00 Tm (App / page shell) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 721.00 Tm (Page composition, navigation and shared layout. Keep global state minimal and typed.) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 704.00 Tm (Dashboard) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 690.00 Tm (Records list, useful empty/loading/error variants, and selected-record navigation. Add search/filter only) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 677.00 Tm (if supported by requirements.) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 660.00 Tm (UploadZone) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 646.00 Tm (File selection and drag/drop, client-side presentation state, validation against confirmed rules, and) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 633.00 Tm (upload callbacks.) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 616.00 Tm (Record detail / results) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 602.00 Tm (Status, returned extraction/analysis data, retry/archive actions, and explicit failure handling.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 581.00 Tm (Integration rules) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 560.00 Tm (- Put API calls behind a small typed service layer \(or typed props\) so endpoint details can be) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 547.50 Tm (supplied later.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 533.00 Tm (- Use an environment variable for the API base URL after it is known; do not hardcode a guessed URL.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 518.50 Tm (- Do not invent backend fields, status values, auth, file constraints, or success responses. Keep) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 506.00 Tm (development mocks isolated and clearly labeled.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 491.50 Tm (- Represent loading, success, and failure distinctly. Surface errors; do not silently turn failures) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 479.00 Tm (into success-shaped data.) Tj ET
+0.17 0.22 0.3 rg BT /F1 9 Tf 1 0 0 1 52.00 464.50 Tm (- Avoid adding libraries unless approved or an existing dependency fits.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 446.00 Tm (Questions to resolve before live API wiring) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 425.00 Tm (Files) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.8 Tf 1 0 0 1 52.00 411.00 Tm (Which file types and size limits are allowed? One or multiple files? Where are uploads sent?) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 394.00 Tm (Workflow) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.8 Tf 1 0 0 1 52.00 380.00 Tm (What are the exact statuses? Is progress polled or pushed? What are retry rules and archive semantics?) Tj ET
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 52.00 363.00 Tm (Data and access) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.8 Tf 1 0 0 1 52.00 349.00 Tm (What are the endpoints, request/response shapes, authentication rules, result fields, and retention) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.8 Tf 1 0 0 1 52.00 336.00 Tm (requirements?) Tj ET
+0.93 0.96 0.99 rg 48 276 499 46 re f
+0.09 0.48 0.43 rg 48 276 3 46 re f
+0.08 0.34 0.32 rg BT /F2 9 Tf 1 0 0 1 60.00 306.00 Tm (Confirmed stack) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 292.00 Tm (React 19 + TypeScript + Vite. Preserve the existing package setup unless the implementation) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 280.00 Tm (genuinely requires a change.) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 42 m 547 42 l S
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 48.00 28.00 Tm (AuditFlow | Frontend implementation brief) Tj ET
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 521.27 28.00 Tm (03 / 04) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 4908 >>
+stream
+0.09 0.42 0.39 rg BT /F2 10 Tf 1 0 0 1 48.00 808.00 Tm (AUDITFLOW) Tj ET
+0.38 0.44 0.52 rg BT /F1 8 Tf 1 0 0 1 449.00 808.00 Tm (COPY-READY CODING REQUEST) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 794 m 547 794 l S
+0.07 0.14 0.24 rg BT /F2 25 Tf 1 0 0 1 48.00 755.00 Tm (Prompt to send to a frontend developer) Tj ET
+0.31 0.38 0.47 rg BT /F1 11 Tf 1 0 0 1 52.00 727.00 Tm (Share this PDF together with the repository so the implementer has both product) Tj ET
+0.31 0.38 0.47 rg BT /F1 11 Tf 1 0 0 1 52.00 712.00 Tm (direction and source context.) Tj ET
+0.95 0.97 0.99 rg 48 462 499 228 re f
+0.09 0.48 0.43 rg 48 462 3 228 re f
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 674.00 Tm (Build the frontend for AuditFlow in the existing repository. It is intended to be a document) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 663.60 Tm (audit/processing app: a user selects and uploads a document, follows extraction/analysis status,) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 653.20 Tm (reviews the returned result, and can archive a completed record.) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 642.80 Tm () Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 632.40 Tm (Use the existing stack and conventions: React 19, TypeScript, and Vite. Inspect the source first.) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 622.00 Tm (Replace the Vite starter screen with a responsive, polished admin-style experience: dashboard,) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 611.60 Tm (document upload area \(drag/drop and file picker\), record/status list, result-review area, and archive) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 601.20 Tm (confirmation. Include accessible labels and keyboard focus. Clearly represent empty, loading,) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 590.80 Tm (uploading, processing, completed, failed/retry, and archived states.) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 580.40 Tm () Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 570.00 Tm (Important repository constraint: backend function files and infrastructure template are empty. There) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 559.60 Tm (are no confirmed API endpoints, auth rules, file limits, status enum, or request/response schemas. Do) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 549.20 Tm (not invent these or show fake success. Keep integration behind a small typed service boundary with) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 538.80 Tm (TODOs. Use mock data only if it is isolated and unmistakably development-only. Ask for the missing) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 528.40 Tm (contract before connecting real endpoints.) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 518.00 Tm () Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 507.60 Tm (Keep components small and typed, handle errors explicitly, avoid unnecessary dependencies, and make) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 497.20 Tm (the layout usable on mobile and desktop. Update directly related docs if needed. Add focused tests) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 486.80 Tm (for meaningful behavior introduced. Run the existing frontend build and lint scripts. Report changed) Tj ET
+0.15 0.21 0.29 rg BT /F1 7.2 Tf 1 0 0 1 59.00 476.40 Tm (files, assumptions, and remaining API questions.) Tj ET
+0.07 0.14 0.24 rg BT /F2 14 Tf 1 0 0 1 48.00 438.00 Tm (Acceptance checklist) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.6 Tf 1 0 0 1 52.00 417.00 Tm (- No Vite starter content; dashboard and upload views reflect the AuditFlow workflow.) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.6 Tf 1 0 0 1 52.00 402.50 Tm (- Key states are visible and interactive, with no silent failure or hardcoded success.) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.6 Tf 1 0 0 1 52.00 388.00 Tm (- Mobile/desktop layouts are usable; controls are accessible.) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.6 Tf 1 0 0 1 52.00 373.50 Tm (- API details remain unresolved until supplied; UI can connect without rewriting page components.) Tj ET
+0.17 0.22 0.3 rg BT /F1 8.6 Tf 1 0 0 1 52.00 359.00 Tm (- Existing build/lint checks pass; implementer reports remaining contract questions.) Tj ET
+0.93 0.97 0.96 rg 48 301.5 499 46 re f
+0.09 0.48 0.43 rg 48 301.5 3 46 re f
+0.08 0.34 0.32 rg BT /F2 9 Tf 1 0 0 1 60.00 331.50 Tm (Bottom line) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 317.50 Tm (This brief explains the intended product flow. The repository is the source of truth for the) Tj ET
+0.18 0.24 0.32 rg BT /F1 8.5 Tf 1 0 0 1 60.00 305.50 Tm (implementation; backend contracts still need to be provided for a truly connected frontend.) Tj ET
+0.86 0.89 0.93 RG 0.7 w 48 42 m 547 42 l S
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 48.00 28.00 Tm (AuditFlow | Frontend implementation brief) Tj ET
+0.48 0.53 0.6 rg BT /F1 7.5 Tf 1 0 0 1 521.27 28.00 Tm (04 / 04) Tj ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000026 00000 n 
+0000000075 00000 n 
+0000000152 00000 n 
+0000000249 00000 n 
+0000000351 00000 n 
+0000000446 00000 n 
+0000000592 00000 n 
+0000004363 00000 n 
+0000004509 00000 n 
+0000009229 00000 n 
+0000009377 00000 n 
+0000013478 00000 n 
+0000013626 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+18586
+%%EOF
