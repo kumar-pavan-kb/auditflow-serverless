@@ -1,0 +1,29 @@
+{
+  "Comment": "AuditFlow Document Processing Pipeline",
+  "StartAt": "ExtractDocument",
+  "States": {
+    "ExtractDocument": {
+      "Type": "Task",
+      "Resource": "${ExtractFunctionArn}",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.TaskFailed"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 2,
+          "BackoffRate": 2.0
+        }
+      ],
+      "Next": "AnalyzeCompliance"
+    },
+    "AnalyzeCompliance": {
+      "Type": "Task",
+      "Resource": "${AnalyzeFunctionArn}",
+      "Next": "ArchiveResult"
+    },
+    "ArchiveResult": {
+      "Type": "Task",
+      "Resource": "${ArchiveFunctionArn}",
+      "End": true
+    }
+  }
+}

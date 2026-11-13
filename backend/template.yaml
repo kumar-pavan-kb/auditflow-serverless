@@ -1,0 +1,83 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AuditFlow Serverless
+  Document extraction and compliance verification engine.
+
+Globals:
+  Function:
+    Timeout: 15
+    MemorySize: 256
+    Runtime: python3.11
+    Architectures:
+      - x86_64
+    Environment:
+      Variables:
+        TABLE_NAME: !Ref AuditTable
+        BUCKET_NAME: !Ref DocumentBucket
+
+Resources:
+  AuditTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey:
+        Name: document_id
+        Type: String
+
+  DocumentBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders: ['*']
+            AllowedMethods: ['GET', 'PUT', 'POST']
+            AllowedOrigins: ['*']
+            MaxAge: 300
+
+  ExtractFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/
+      Handler: extract.lambda_handler
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Ref DocumentBucket
+
+  AnalyzeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/
+      Handler: analyze.lambda_handler
+
+  ArchiveFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/
+      Handler: archive.lambda_handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref AuditTable
+
+  AuditStateMachine:
+    Type: AWS::Serverless::StateMachine
+    Properties:
+      DefinitionUri: statemachine/workflow.asl.json
+      DefinitionSubstitutions:
+        ExtractFunctionArn: !GetAtt ExtractFunction.Arn
+        AnalyzeFunctionArn: !GetAtt AnalyzeFunction.Arn
+        ArchiveFunctionArn: !GetAtt ArchiveFunction.Arn
+      Policies:
+        - LambdaInvokePolicy:
+            FunctionName: !Ref ExtractFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref AnalyzeFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref ArchiveFunction
+
+Outputs:
+  StateMachineArn:
+    Description: "AuditFlow State Machine ARN"
+    Value: !Ref AuditStateMachine
+  DocumentBucketName:
+    Description: "S3 Bucket for document uploads"
+    Value: !Ref DocumentBucket
