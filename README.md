@@ -4,7 +4,7 @@ AuditFlow is an automated, serverless document auditing and compliance verificat
 
 ## 📐 Architecture Diagram
 
-![AuditFlow Architecture](docs/architecture.png)
+![AuditFlow Architecture](asstes/architecture.png)
 
 ## 🚀 Core Architecture & Workflow
 
