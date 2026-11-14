@@ -34,15 +34,31 @@ The system is built entirely on asynchronous, event-driven serverless components
 ```
 auditflow-serverless/
 │
-├── template.yaml         # AWS SAM infrastructure template (API Gateway, S3, Step Functions, Lambdas, DynamoDB)
-├── src/                  # Lambda function source code handlers
-│   ├── parser/           # Document extraction logic (Lambda)
-│   ├── validator/        # Rules engine evaluation logic (Lambda)
-│   └── handler/          # API query and persistence handlers (Lambda)
+├── backend/                  # Backend infrastructure & serverless functions
+│   ├── functions/            # Lambda handlers
+│   │   ├── analyze.py        # Document analysis & validation logic
+│   │   ├── archive.py        # Storage and archiving handler
+│   │   └── extract.py        # Document text and data extraction
+│   ├── requirements.txt      # Python backend dependencies
+│   └── template.yaml         # AWS SAM infrastructure template
 │
-├── statemachine/         # Step Functions ASL (Amazon States Language) definition
-├── tests/                # Unit and integration test suites
-└── README.md             # Project documentation & architecture
+├── statemachine/             # Step Functions ASL orchestration definition
+│   └── workflow.asl.json
+│
+├── frontend/                 # React frontend application
+│   ├── public/               # Public static icons & SVGs
+│   ├── src/                  # React source files
+│   │   ├── assets/           # Architecture diagrams & hero images
+│   │   ├── components/       # UI components (Dashboard, UploadZone)
+│   │   ├── data/             # Mock datasets and fixtures
+│   │   ├── services/         # API integration handlers
+│   │   ├── types/            # TypeScript interfaces & types
+│   │   ├── App.tsx           # Root application component
+│   │   └── main.tsx          # Application entry point
+│   ├── package.json          # Frontend npm dependencies
+│   └── vite.config.ts        # Vite build configuration
+│
+└── README.md                 # Project documentation
 ```
 Deployment (AWS SAM)
 To deploy this serverless architecture to AWS:
