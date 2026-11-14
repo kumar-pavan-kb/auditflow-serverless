@@ -57,7 +57,7 @@ sam build
 ```
 sam deploy --guided
 ```
-## 🧪 Local Testing & Verification
+Local Testing & Verification
 Since this project is architected around serverless AWS services, local testing focuses on validating individual handlers and state transitions:
 1. **Unit Testing:** Run test suites via Pytest to validate parsing and validation logic independently:
    ```
@@ -73,5 +73,5 @@ Stateless Processing: Step Functions orchestrate tasks securely with scoped IAM 
 Audit Trail: Every validation step and status change is immutably recorded in DynamoDB for traceability.
 
 
-🏁 Conclusion
+Conclusion
 AuditFlow provides a robust, resilient, and fully event-driven architecture for automated document compliance—eliminating manual overhead and ensuring predictable scaling for corporate auditing workflows.
