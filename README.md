@@ -65,13 +65,22 @@ Since this project is architected around serverless AWS services, local testing 
    ```
 2.Mock Event Testing: Use local event payloads to invoke Lambda function handlers directly prior to deployment.
 
-##Security & Compliance Features
-*Presigned URLs: Client uploads bypass the backend server entirely, utilizing time-limited secure S3 presigned URLs to prevent unauthorized storage access.
+## 🧪 Local Testing & Verification
 
-*Stateless Processing: Step Functions orchestrate tasks securely with scoped IAM roles adhering to the principle of least privilege.
+Since this project is architected around serverless AWS services, local testing focuses on validating individual handlers and state transitions:
 
-*Audit Trail: Every validation step and status change is immutably recorded in DynamoDB for traceability.
+1. **Unit Testing:** Run test suites via Pytest to validate parsing and validation logic independently:
+   ```
+   pytest tests/
+   ```
+2.Mock Event Testing: Use local event payloads to invoke Lambda function handlers directly prior to deployment.
 
+   ## 🔒 Security & Compliance Features
 
-##Conclusion
+* **Presigned URLs:** Client uploads bypass the backend server entirely, utilizing time-limited secure S3 presigned URLs to prevent unauthorized storage access.
+* **Stateless Processing:** Step Functions orchestrate tasks securely with scoped IAM roles adhering to the principle of least privilege.
+* **Audit Trail:** Every validation step and status change is immutably recorded in DynamoDB for traceability.
+
+## 🏁 Conclusion
+
 AuditFlow provides a robust, resilient, and fully event-driven architecture for automated document compliance—eliminating manual overhead and ensuring predictable scaling for corporate auditing workflows.
